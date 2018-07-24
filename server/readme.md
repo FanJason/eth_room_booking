@@ -1,6 +1,8 @@
-npm install
-setup mongodb database for users through mlab and create user to fill out URI in app.js
-nodemon app
+### npm install
+
+### setup mongodb database for users through mlab and create user to fill out URI in app.js
+
+### nodemon app
 
 
 server should redirect to '/roombooked' after '/book' is called
