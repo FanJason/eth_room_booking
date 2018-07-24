@@ -10,8 +10,7 @@ setup mongodb database for rooms through mlab and create user to fill out URI in
 ### Step 4
 npm run full
 
-## To run:
--> truffle compile, truffle migrate, nodemon server
+#### To run: truffle compile, truffle migrate, nodemon server
 
 
 
