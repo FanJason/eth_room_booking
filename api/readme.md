@@ -1,3 +1,4 @@
+### Step 1
 npm install
 install ganache
 setup mongodb database for rooms through mlab and create user to fill out URI in server.js
