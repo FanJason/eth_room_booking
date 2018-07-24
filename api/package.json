@@ -1,0 +1,29 @@
+{
+  "name": "v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "full": "truffle compile && truffle migrate --reset && nodemon server",
+    "dev": "nodemon server",
+    "node": "node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.2.3",
+    "nodemon": "^1.17.5",
+    "truffle-contract": "^3.0.6",
+    "web3": "^0.19.1"
+  }
+}

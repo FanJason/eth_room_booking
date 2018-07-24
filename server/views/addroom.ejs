@@ -1,0 +1,25 @@
+  <%- include ./partials/header %>
+      <br>
+      <h1 class='text-center'>Add A Room</h1>
+      <br>
+      <div class="container">
+            <div class='text-center'>
+                  <form name='room' class="form-inline" action='/addRoom' method="POST">
+                      <div class="row">
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <div class="input-group">
+                                    <input type="number" id="price" class="form-control" name='price' placeholder="Price (ETH)" required=""> 
+                                </div>
+                                <div class="input-group">
+                                    <input type="number" id="roomNum" class="form-control" name='roomNum' placeholder="Room ID" required=""> 
+                                </div>
+                                <div>
+                            </div>
+                            </div>
+                        </div> 
+                        <br>       
+                        <button class="btn btn-primary room-btn" type="submit">Submit</button> 
+                  </form>
+            </div>
+        </div>
+<%- include ./partials/footer %>

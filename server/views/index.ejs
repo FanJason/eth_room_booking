@@ -1,0 +1,71 @@
+  <%- include ./partials/header %>
+    <div class="container">
+      <div class="container">
+          <div>
+              <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <h1 class="text-center">Booking App</h1>
+                <hr/>
+                <div class='panel-default'>
+                  <% if (tokenValue > 0) { %>
+                    <h5 class='panel-body text-center' id="balance">Token Balance: <strong><%= tokenValue %></strong> ETH</h5>
+                  <% } else { %>
+                    <h5 class='panel-body text-center' id="balance">Users must have a token to book rooms. Please <a href='/buy'>buy a token</a>.</h5>
+                  <% } %>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div>
+      </div>
+        <div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Available Rooms</h3>
+            </div>
+            <div class="panel-body">
+              <div class="container">
+                  <div id="roomsRow" class="row col-xs-12 col-sm-12">
+                    <% for (var i = 0; i < rooms.length; i++) { %>
+                      <div id="roomTemplate">
+                        <h4 class="container roomID">Room ID: <%= rooms[i].roomID %></h4>
+                          <div class="panel-body">
+                              <div>
+                                  <table class="table table-bordered">
+                                      <tbody>
+                                          <tr>
+                                            <th id="sellPrice">Sell Price</th>
+                                              <td class="sellPrice"><%= rooms[i].price %></td>
+                                          </tr>
+                                          <tr>
+                                            <th>Current Holder</th>
+                                            <% if (rooms[i].holder == "0x0000000000000000000000000000000000000000") { %>
+                                              <td class="holder">0x0</td>
+                                            <% } else { %>
+                                              <td class="holder"><%= rooms[i].holder %></td>
+                                            <% } %>
+                                          </tr>
+                                          <tr>
+                                            <th>Blocked Status</th>
+                                              <td class="blockedStatus"><%= rooms[i].blocked %></td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                                <% if (rooms[i].booked) { %>
+                                  <button data-roomid="<%= rooms[i].roomID %>" href="/book" class="btn btn-primary btn-book" type="button">Book</button>
+                                <% } else { %>
+                                  <button data-roomid="<%= rooms[i].roomID %>" href="/book" class="btn btn-primary btn-book" type="button" disabled>Book</button>
+                                <% } %>
+                              </div>
+                          <hr/>
+                    <% } %>
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include ./partials/footer %>
+  </html>

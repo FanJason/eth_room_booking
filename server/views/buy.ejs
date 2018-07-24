@@ -1,0 +1,19 @@
+<%- include ./partials/header %>
+      <br>
+      <h1 class='text-center'>Buy Tokens</h1>
+      <br>
+      <div class="container">
+          <div class='text-center'>
+                <form class="form-inline" action="/buy" method="post">
+                    <div class="form-group">
+                      <label class="sr-only" for="amount">Amount (in dollars)</label>
+                    <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control" id='amount' name='value' placeholder="Amount"> 
+                    </div>
+                    <button id="increase" class="btn btn-success plus-btn" type="button">+</button>  
+                    <button id="buy" class="btn btn-primary token-btn" type="submit">Buy</button> 
+                </form>
+          </div>
+      </div>
+<%- include ./partials/footer %>

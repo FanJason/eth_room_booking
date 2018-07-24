@@ -1,0 +1,18 @@
+<%- include ./partials/header %>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+                <h1 class="text-center">Room Added!</h1>
+          </div>
+            <div class="panel-body">
+                <div class="container">
+                    <br>
+                    <p><strong>Selling Price:</strong> <%= price %></p>
+                    <p><strong>Room ID:</strong> <%= roomID %></p>
+                    <p><strong>User:</strong> <%= adder %></p>
+                    <p><strong>Tx Hash:</strong> <%= txHash %></p>
+                    <p><strong>Block Number:</strong> <%= blockNum %></p>
+                    <a href="/">Return to Home page</a>
+                </div>  
+            </div> 
+      </div>
+<%- include ./partials/footer %>
