@@ -1,4 +1,4 @@
-## Setup
+## SETUP
 
 1) npm install
 
