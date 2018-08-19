@@ -1,18 +1,16 @@
-## Step 1
-npm install
+## Setup
 
-## Step 2
-install ganache
+1) npm install
 
-## Step 3
-setup mongodb database for rooms through mlab and create user to fill out URI in server.js
+2) install ganache
 
-## Step 4
-delete build file
+3) setup mongodb database for rooms through mlab and create user to fill out URI in server.js
 
-## Step 5
-npm run full
-To run: truffle compile, truffle migrate, nodemon server
+4) delete build file
+
+5) npm run full -> to run: truffle compile, truffle migrate --reset, nodemon server
+
+
 
 
 need to retrieve room data from database when api shuts down
