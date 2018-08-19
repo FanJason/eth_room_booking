@@ -46,6 +46,12 @@ router.get('/getrooms', function(req, res) {
   })
 })
 
+router.get('/test' , function(req, res) {
+  App.getDefAccount().then(function(result) {
+    res.send(result);
+  })
+});
+
 router.get('/addroom/:price/:roomNum', function(req, res) {
     var sellPrice = req.params.price;
     var room_id = req.params.roomNum;

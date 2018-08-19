@@ -7,7 +7,7 @@ var MongoStore = require('connect-mongo')(session);
 
 //connect to MongoDB
 mongoose.Promise = require('bluebird');
-mongoose.connect('<mongoURI_from_mlab>');
+mongoose.connect('mongodb://jf7776:temp123@ds121190.mlab.com:21190/usersdb123');
 var db = mongoose.connection;
 
 //handle mongo error

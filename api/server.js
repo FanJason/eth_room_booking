@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongoURI_from_mlab>');
+mongoose.connect('mongodb://jf7776:temp123@ds227322.mlab.com:27322/roomdb');
 
 var App = require('./src/js/app');
 
