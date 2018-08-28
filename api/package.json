@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "full": "truffle compile && truffle migrate --reset && nodemon server",
     "dev": "nodemon server",
-    "node": "node server"
+    "node": "node server",
+    "start": "node server"
   },
   "author": "",
   "license": "ISC",
