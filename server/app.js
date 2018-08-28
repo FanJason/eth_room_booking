@@ -41,6 +41,6 @@ app.use('/', routes);
 app.set('views', "views");
 app.set('view engine', 'ejs');
 
-app.listen(3000, function() {
-    console.log("listening on port 3000")
+app.listen(process.env.PORT || 3000, function() {
+    console.log("listening on port")
 })
